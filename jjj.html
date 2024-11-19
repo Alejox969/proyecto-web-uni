@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4 JavaScript - Estructuras de Control</title>
+</head>
+
+<body>
+    <h1>Determinar el número mayor</h1>
+    <div id="result"></div>
+
+    <script>
+        // Solicitar los números al usuario
+        var num1 = parseFloat(prompt("Ingrese el valor del num1"));
+        var num2 = parseFloat(prompt("Ingrese el valor del num2"));
+        var num3 = parseFloat(prompt("Ingrese el valor del num3"));
+        var num4 = parseFloat(prompt("Ingrese el valor del num4"));
+        var res;
+        num1=parseInt(num1);
+        num2=parseInt(num2);
+        num3=parseInt(num3);
+        num4=parseInt(num4);
+
+        if (num1 ==""  || num1 == null || 
+            if (num2 ==""  || num2 ==null ||
+                if (num3 ==""  || num3 ==null || 
+                    if (num4 ==""  || num4 ==null || 
+                    window.alert("caracter vacio")
+
+
+        // Determinar el número mayor
+        if (num1 >= num2 && num1 >= num3 && num1 >= num4) {
+            res = "El número mayor es " + num1 + ".";
+        } else if (num2 >= num1 && num2 >= num3 && num2 >= num4) {
+            res = "El número mayor es " + num2 + ".";
+        } else if (num3 >= num1 && num3 >= num2 && num3 >= num4) {
+            res = "El número mayor es " + num3 + ".";
+        } else {
+            res = "El número mayor es " + num4 + ".";
+        }
+
+        // Mostrar el resultado en el div con id "result"
+        document.getElementById("result").innerText = res;
+    </script>
+</body>
+
+</html>

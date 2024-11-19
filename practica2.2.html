@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica2 JavaScript</title>
+    <script>
+        // declaracion de variables
+        var x= 50;
+        var y= 50;
+        var z= 100;
+    </script>
+</head>
+<body>
+    <h2>ejemplo</h2>
+    <p>document.write</p>
+    <p id="demo">esta vacio</p>
+    <script>
+        document.write(x+y);
+    </script>
+    <div>
+        <h2>ejemplo2</h2>
+        <p>Windows.alert</p>
+        <p id="demo1">esta vacio</p>
+        <script>
+            windows.alert(x+y);
+        </script>
+    </div>
+    <div>
+        <h2>ejemplo3</h2>
+        <p>console.log</p>
+        <p id="demo2">esta vacio</p>
+        <script>
+            console.log(x+y);
+        </script>
+    </div>
+    <div>
+        <h2>ejemplo4</h2>
+        <p>utilizando evento Onclick</p>
+        <button onclick="windows.alert(‘Hola Mundo‘);">
+            Click Aqui button</button>
+            <p>utilizando evento Onclick para mostrar la fecha</p>
+
+            <div>
+                <h2>Ejemplo 5</h2>
+                <p>Utilizando evento:</p>
+                <button onclick="mostrarAlerta()">Click</button>
+                <p>Mostrando fecha:</p>
+                <button onclick="mostrarFecha(this)">¿Qué hora es?</button>
+            </div>
+            <div>
+                <div>
+                    <h2>ejemplo6 mause</h2>
+                    <button onmouseover="this.innerHTML=Date()">hora?</button>
+                    <button onmouseout="this.innerHTML=Date()">hora?</button>
+                </div>
+                
+                
+            </div>
+        <script>
+            console.log(x+y);
+        </script>
+    </div>
+</body>
+</html>

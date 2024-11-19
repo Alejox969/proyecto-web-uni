@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FUNCIONES EN JAVASCRIPT</title>
+     <script src="script.js"></script>
+</head>
+<body>
+     <h2>Ejemplo Funciones 1</h2>
+     <input type="text" id="sum1" placeholder="Número 1">
+     <p>+</p>
+     <input type="text" id="sum2" placeholder="Número 2">
+
+     <p id="resuma">Resultado:</p>
+     <p id="demo"></p>
+     <button onclick="suma();">SUMAR</button>
+     <hr>
+     <button onclick="resta();">RESTA</button>
+     <hr>
+     <button onclick="multiplicacion();">MULTIPLICACION</button>
+     <hr>
+     <button onclick="division();">DIVISION</button>
+
+     <script>
+        function suma() {
+            calcular('+');
+        }
+
+        function resta() {
+            calcular('-');
+        }
+
+        function multiplicacion() {
+            calcular('*');
+        }
+
+        function division() {
+            calcular('/');
+        }
+
+        function calcular(operacion) {
+            var num1 = parseFloat(document.getElementById("sum1").value);
+            var num2 = parseFloat(document.getElementById("sum2").value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById("demo").innerHTML = "Error: Por favor ingresa números válidos.";
+                return;
+            }
+
+            var resultado;
+            switch (operacion) {
+                case '+':
+                    resultado = num1 + num2;
+                    document.getElementById("demo").innerHTML = "El resultado de " + num1 + " + " + num2 + " es: " + resultado;
+                    break;
+                case '-':
+                    resultado = num1 - num2;
+                    document.getElementById("demo").innerHTML = "El resultado de " + num1 + " - " + num2 + " es: " + resultado;
+                    break;
+                case '*':
+                    resultado = num1 * num2;
+                    document.getElementById("demo").innerHTML = "El resultado de " + num1 + " * " + num2 + " es: " + resultado;
+                    break;
+                case '/':
+                    if (num2 !== 0) {
+                        resultado = num1 / num2;
+                        document.getElementById("demo").innerHTML = "El resultado de " + num1 + " / " + num2 + " es: " + resultado;
+                    } else {
+                        document.getElementById("demo").innerHTML = "Error: División por cero no permitida.";
+                    }
+                    break;
+            }
+        }
+     </script>
+</body>
+</html>

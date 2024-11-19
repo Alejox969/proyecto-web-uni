@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FUNCIONES EN JAVASCRIPT</title>
+     <script src="script.js"></script>
+</head>
+<body>
+     <h2>ejemplo funciones 1</h2>
+     <input type="text" id="sum1">
+     <p>+</p>
+     <input type="text" id="sum2">
+
+     <p> id="resuma">Resultado:</p>
+     <p id="demo"></p>
+     <button onclick="resuma();">SUMAR</button>
+     <hr>
+     <button onclick="resta();">RESTA</button>
+     <hr>
+     <button onclick="multiplicacion();">MULTIPLICACION</button>
+     <hr>
+     <button onclick="dicvicion();">DIVICION</button>
+
+     <script> src="script.js"</script>
+     <script>
+        function suma(){
+            var num1 = prompt("Ingrese el valor 1");
+            num1 =parseInt (num1);
+
+            
+            var num2 = prompt("Ingrese el valor 2");
+            num2 =parseInt (num2);
+
+
+            resultado = num1 + num2;
+            document.getElementById("demo").innerHTML = "El resultado de"+num1+"y"+num2"es:"+ resultado;
+
+
+            window.alert("Hola mundo");
+            }
+     </script>
+</body>
+</html>

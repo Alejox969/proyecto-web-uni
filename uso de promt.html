@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4 Javascript - estructuras de control</title>
+</head>
+
+<body>
+    <h1>Determinar el número mayor</h1>
+    <div id="result"></div>
+
+    <script>
+        var num1 = prompt("Ingrese el valor del num1");
+        var num2 = prompt("Ingrese el valor del num2");
+        var num3 = prompt("Ingrese el valor del num3");
+        var num4 = prompt("Ingrese el valor del num4");
+        var res;
+
+        if (num1 > num2 && num1 > num3 && num1 > num4) {
+            res = "El # " + num1 + " es mayor que " + num2 + ", " + num3 + ", " + num4;
+        } else if (num2 > num1 && num2 > num3 && num2 > num4) {
+            res = "El # " + num2 + " es mayor que " + num1 + ", " + num3 + ", " + num4;
+        } else if (num3 > num1 && num3 > num2 && num3 > num4) {
+            res = "El # " + num3 + " es mayor que " + num1 + ", " + num2 + ", " + num4;
+        } else if (num4 > num1 && num4 > num2 && num4 > num3) {
+            res = "El # " + num4 + " es mayor que " + num1 + ", " + num2 + ", " + num3;
+        } else {
+            res = "Todos los números son iguales.";
+        }
+
+        
+        document.write("result").innerText = res;
+    </script>
+</body>
+
+</html>

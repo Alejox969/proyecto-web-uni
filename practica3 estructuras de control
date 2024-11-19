@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica2 JavaScript</title>
+    <script>
+        // declaracion de variables
+        var x= 50;
+        var y= 50;
+        var z= 100;
+
+        if  (x > z ) {resultado = "X es mayor a Z"} (condition) {  // bloque donde se ejecutebse la condicion es verdadera
+            }
+    </script>
+</head>
+<body>
+    <h2>Uso del If Else</h2>
+    <p>document.write</p>
+    <p id="demo">esta vacio</p>
+    <script>
+        document.write(x+y);
+    </script>
+    <div>
+</body>
+</html>
