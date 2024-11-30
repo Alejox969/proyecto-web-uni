@@ -1,78 +1,288 @@
-<!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     <link href="estilos/estilos.css">
-     <title>bootstrap</title>
-</head>
-
-<body>
-     <header class="container text-center"> <!--INICIO CONTENEDOR HEADER y llamamos a la clase container de bootstrap-->
-          <div class="row"><!--inicio clase fila-->
-               <section class="col-3" id="logo">
-                    <a href="index.html" alt="inicio"> <img class="img-fluid" src="imagenes/logo.png" alt="logo"></a>
-
-               </section>
-               <nav class="col-9" id="menu">
-
-                    <ul class="nav justify-content-center" >
-                         <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="quienes-somos.html">QUIENES SOMOS</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="notas.html">NOTAS</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="contacto.html">CONTACTO</a>
-                         </li>
-                         <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">SECCIONES</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">audio</a></li>
-                                <li><a class="dropdown-item" href="#">video</a></li>
-                                <li><a class="dropdown-item" href="#">biblioteca</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <form class="d-flex" role="search">
-                                   <input class="form-control me-2" type="search" placeholder="ingresar busqueda" aria-label="Search">
-                                   <button class="btn btn-outline-info" type="submit">Buscar</button>
-                                 </form>
-                            </li>
-                    </ul>
-               </nav>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="estilos/estilo.css" rel="stylesheet">
+    
+    <style type="text/css" id="operaUserStyle"></style></head>
+     <body>
+      <header class="container text-center sticky-top align-middle">
+        
+        <div class="row g-0 text-center">
+          <div class="col-sm-6 col-md-4"> 
+            <section class="col-3" id="logo">
+              <a href="index.html" alt="Inicio"> <img class="img-fluid" src="imagenes/logo.png"> </a>
+      
+                   </section><!--fin section LOGO -->
+          </div>
+          <div class="col-6 col-md-8">
+            <nav class="col-9 " id="menu">
+    
+              <ul class="nav justify-content-center ">
+   
+              <li class="nav-item">
+              <a class="nav-link" href="index.html"><button type="button" class="btn btn-danger">INICIO</button></a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html"><button type="button" class="btn btn-danger">quienes-somos</button></a>
+              </li>
+              <li class="nav-item">
+              </li><li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><button type="button" class="btn btn-danger">secciones</button></a>
+     <ul class="dropdown-menu">
+       <li><a class="dropdown-item" href="#">Noticias</a></li>
+       <li><a class="dropdown-item" href="#">Investigaciones</a></li>
+       <li><a class="dropdown-item" href="#">
+       
+       </a></li>
+       <li><hr class="dropdown-divider"></li>
+       <li><a class="dropdown-item" href="#">audios</a></li>
+     </ul>
+   </li>
+              <li class="nav-item">
+                 <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Ingrese su busqueda" aria-label="Search">
+               <button class="btn btn-outline-info" type="submit">Buscar</button>
+             </form>
+              </li>
+              </ul>
+ 
+ 
+ 
+          </nav><!--fin nav -->
 
           </div>
-     </header>
+        </div>
+      </header><!--fin contenedor Header -->
+    
+      <main class="container">
+             <div class="row mb-4">
+        <section class="col-12 text-center" id="slogan">
+    
+               <h1 class="text-info">Bienvenido omar  </h1>
+    
+               <h2 class="text-primary">Enterate de las ventajas de vue.js </h2>
+    
+        </section><!--fin section slogan-->
+    
+        </div><!--fin div fila 1-->  
+    
+        <div class="row">
+            <section class="col-md-8" id="contenedor-principal">
+    
+            <div class="row mb-4">  
+    
+            <div class="col-12"> <h3>NOTICIAS </h3></div>      	
+                    <div class="card col-6 p-2">
+                  <img src="imagenes/vuepod.jpg" class="card-img-top" alt="Noticia1">
+                  <div class="card-body">
+                    <h5 class="card-title">Ahora, vamos a enumerar las razones para elegir Vue.js</h5>
+                        <p class="card-text">Vue 3 es la última versión de este framework, prometiendo mejoras en rendimiento, sintaxis y capacidades sin precedentes. Las novedades incluyen optimización del código, mejoras en la sintaxis y el manejo de errores, así como nuevas características como Suspense y Composition API.</p>
+                        <a href="noticias/noticia1.html" class="btn btn-info">Ver mas...</a>
+                   </div>
+                  </div><!--fin noticia1 -->
+    
+                 <div class="card col-6 p-2">
+      <img src="imagenes/not1.jpg" class="card-img-top" alt="Noticia1">
+      <div class="card-body">
+        <h5 class="card-title">Formas de Usar Vue</h5>
+        <p class="card-text">Vue puede ser utilizado como un archivo de script autónomo; ¡no se requiere ningún paso de compilación! Si tienes un framework de backend que ya renderiza la mayor parte del HTML, o tu lógica de frontend no es lo suficientemente compleja como para justificar un paso de construcción, esta es la forma más fácil de integrar Vue en tu stack. Puedes pensar en Vue como un reemplazo más declarativo de jQuery en estos casos.</p>
+        <a href="noticias/noticia2.html" class="btn btn-info">Ver mas...</a>
+      </div>
+    </div><!--fin noticia2 -->
+    </div><!--fin div fila NOTICIAS-->
+    
+    
+    <div class="row mb-4">  
+    
+                      
+                    <div class="card col-6">
+                  <img src="imagenes/not2.jpg" class="card-img-top" alt="Noticia1">
+                  <div class="card-body">
+                    <h5 class="card-title">Tu mejor o unica opcion?</h5>
+                        <p class="card-text">Aunque Vue está diseñado principalmente para la construcción de aplicaciones web, no se limita en absoluto al navegador. Puedes: Construir aplicaciones de escritorio con Electron o Tauri Construir aplicaciones móviles con Ionic Vue Construir aplicaciones de escritorio y móviles desde el mismo código base con Quasar Crea experiencias 3D con WebGL usando TresJS Utiliza la Custom Renderer API de Vue para crear renderizadores personalizados, como los de el terminal.</p>
+                        <a href="noticias/noticia3.html" class="btn btn-info">Ver mas...</a>
+                   </div>
+                  </div><!--fin noticia1 -->
+    
+                 <div class="card col-6">
+      <img src="imagenes/not3.jpg" class="card-img-top" alt="Noticia1">
+      <div class="card-body">
+        <h5 class="card-title">Más Allá de la Web</h5>
+        <p class="card-text">Creación rápida de prototipos Vue.js permite la creación de prototipos más rápido debido a su facilidad de uso y sintaxis sencilla. Esto significa que un desarrollador de Vue.js puede ayudar a hacer realidad las ideas mucho más rápido en comparación con los marcos web tradicionales. Alto rendimiento Vue.js proporciona aplicaciones web rápidas y con capacidad de respuesta, lo que permite una experiencia de usuario fluida. Vue.js utiliza renderizado DOM virtual, lo que lo hace altamente eficiente y capaz de manejar mucho tráfico. Escalabilidad Cuando un desarrollador trabaja con Vue.js se encuentra con una tecnología altamente escalable y flexible. El marco puede adaptarse fácilmente a su proyecto a medida que crece, por lo que requiere un mantenimiento o alteración mínimos. Curva de aprendizaje sencilla Vue.js es fácil de entender y utilizar para desarrolladores web con conocimientos básicos de HTML, CSS y JavaScript. Como resultado, contratar a un desarrollador de Vue.js puede ayudar a reducir los costos de capacitación.</p>
+        <a href="noticias/noticia4.html" class="btn btn-info">Ver mas...</a>
+      </div>
+    </div><!--fin noticia2 -->
+    </div><!--fin div fila NOTICIAS-->
+    
+    
+    <div class="row mb-4">  
+    
+            <div class="col-12"> <h3>MAS VISTOS </h3></div>      	
+                    <div class="card col-6 ">
+                  <img src="imagenes/nota1.jpg" class="card-img-top" alt="Noticia1">
+                  <div class="card-body">
+                    <h5 class="card-title">Beneficios de la implementación de Vue.js en el desarrollo de software</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="noticias/noticia5.html" class="btn btn-info">Ver mas...</a>
+                   </div>
+                  </div><!--fin noticia1 -->
+    
+                 <div class="card col-6">
+      <img src="imagenes/nota2.png" class="card-img-top" alt="Noticia1">
+      <div class="card-body">
+        <h5 class="card-title">Podria ser tu mejor opcion?</h5>
+        <p class="card-text">Es posible que ya tengas preguntas, no te preocupes. Trataremos cada pequeño detalle en el resto de la documentación. Por ahora, sigue leyendo para que puedas tener una comprensión general de lo que ofrece Vue.</p>
+        <a href="noticias/noticia6.html" class="btn btn-info">Ver mas...</a>
+      </div>
+    </div><!--fin noticia2 -->
+    </div><!--fin div fila NOTICIAS-->
+    
+    
+    <div class="row mb-4">  
+    
+                      
+                    <div class="card col-6">
+                  <img src="imagenes/nota3.png" class="card-img-top" alt="Noticia1">
+                  <div class="card-body">
+                    <h5 class="card-title">Titulo Noticia</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="noticias/noticia7.html" class="btn btn-info">Ver mas...</a>
+                   </div>
+                  </div><!--fin noticia1 -->
+    
+                 <div class="card col-6">
+      <img src="imagenes/nota4.png" class="card-img-top" alt="Noticia1">
+      <div class="card-body">
+        <h5 class="card-title">Titulo Noticia</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="noticias/noticia8.html" class="btn btn-info">Ver mas...</a>
+      </div>
+    </div><!--fin noticia2 -->
+    </div><!--fin div fila NOTICIAS-->
+    
+            </section><!--fin section contenedor principal -->
+    
+                <aside class="col-md-4" id="barra-lateral">
+            
+            <section class="card mb-4">
+    
+            <div class="list-group">
+        <a class="list-group-item list-group-item-action disabled text-bg-info" aria-disabled="true">NOVEDADES</a>
+       <a href="https://play.vuejs.org/#eNp9kUFLwzAUx7/KM5cqzBXR0+gGKgP1oKKCl1xG99ZlpklIXuag9Lv7krK5w9it7//7v/SXthP3zo23EcVEVKH2yhEEpOhm0qjWWU/QgccV9LDytoWCq4U00tTWBII2NDBN/LJ4Qq0tfFuvlxfFlTRVORzHB/FA2Dq9IOQJoFrfzLouL/d9VfKUU2VcJNhet3aJeioFcymgZFiVR/tiJCjw61eqGW+CNWzepX0pats6pdG/OVKsJ8UEMklswXa/LzkjH3G0z+s11j8n8k3YpUyKd48B/RalODBa+AZpwPPPV9zx8wGyfdTcPgM/MFgdk+NQe4hmydpHvWz7nL+/Ms1XmO8ITdhfKommZp/7UvA/eTxz9X/d2/Fd3pOmF/0fEx+nNQ==" class="list-group-item list-group-item-action"> Patio de juegos Vue.js!!</a>
+      <a href="https://vuejs.org/tutorial/#step-1" class="list-group-item list-group-item-action"> Tutotrial de vuejs</a>
+      <a href="https://vuejs.org/" class="list-group-item list-group-item-action">Sitio oficial</a>
+      <a  href="https://www.thespike.gg/es/events" class="list-group-item list-group-item-action disabled" aria-disabled="true">Enterarte de nuestros eventos</a>
+    </div>
+    
+            </section><!--fin widget 1 -->
+    
+        
+                    <section class="card mb-4">
+                  <div class="card-header text-bg-info">
+                    CITA
+                  </div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p>
+                        Vue (pronunciado /vjuː/, como view ) es un marco de JavaScript para crear interfaces de usuario. Se basa en HTML, CSS y JavaScript estándar y proporciona
+                         un modelo de programación declarativo basado en componentes que lo ayuda a desarrollar de manera eficiente interfaces de usuario de cualquier complejidad.
+                      </p>
+                    </blockquote>
+                  </div>
+            </section><!--fin widget 2 -->
+    
+            <section class="card mb-4">
+                  <div class="card-header text-bg-info">
+                    VIDEO  			</div>
+                  <div class="card-body">
+                    <iframe src="https://www.youtube.com/embed/AqesL138vMA?si=cbDYoWGLY01t3QQ_" frameborder="0" height="px" width="400px"></iframe>
+                    
+                  </div>
+            </section><!--fin widget 3 -->
+    
+    
+            <section class="card mb-4">
+                  <div class="card-header text-bg-info">
+                    FORMULARIO DE CONTACTO  			</div>
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    
+                  </div>
+            </section><!--fin widget 4 -->
+            <section class="card mb-4">
+              <div class="card-header text-bg-info">
+                mapa  			</div>
+              <div class="card-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30604.339929715552!2d-68.124672!3d-16.498688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2076af1ebd27%3A0x27a95c97aefd8f4a!2sUniversidad%20Boliviana%20De%20Inform%C3%A1tica%20Sub%20Sede%20La%20Paz!5e0!3m2!1ses!2sbo!4v1732659209122!5m2!1ses!2sbo" width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+              </div>
+        </section><!--fin widget 4 -->
+    
+    
+    
+    
+    
+    
+    
+    
+            </aside><!--fin barra lateral -->
+              
+    
+    
+        </div><!--fin div fila 2 -->
+    
+    
+    
+      </main><!--fin contenedor main -->
+    
+    <footer class="container pt-5">
+         <div class="row">
+            <section> 
+               <div class="container text-center">
+              <div class="row align-items-center">
+                <div class="col">
+                  Pagina de la U.B.I
+                </div>
+                <div class="col">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=">
+                    <button type="button" class="btn btn-dark">
+                      <img src="imagenes/Face.png" alt="" height="50px" width="50px">
+                    </button>
+                  </a>
+                  <a href="https://twitter.com/intent/tweet?text=">
+                    <button type="button" class="btn btn-dark">
+                      <img src="imagenes/twitter.png" alt="" height="50px" width="50px">
+                    </button>
+                  </a>
+                  <a href="https://pinterest.com/pin/create/button/?url=&media=">
+                    <button type="button" class="btn btn-dark">
+                      <img src="imagenes/pinteres.png" alt="" height="50px" width="50px" >
+                    </button>
+                  </a>
+                </div>
+                <div class="col">
+                  Omar Alejandro Senzano 
+                </div>
+              </div>
+            </div>
+            </section>
+           
+            
 
-     <main class="container"><!--INICIO CONTENEDOR MAIN-->
-          <div class="row"><!--inicio clase fila-->
-               <section class="col-12 text-center" id="slogan">
-                    <h1 class="text-primary">BIENVENIDO A VALORANT</h1> 
-                    <h2 class="text-primary">CONVIERTETE EN PROPLAYER</h2>
-
-               </section>
-          </div>
-     </main>
-
-     <footer class="container"><!--INICIO CONTENEDOR FOOTER-->
-          <div class="row"><!--inicio clase fila-->
-
-          </div>
-     </footer>
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"></script>
-</body>
-
-</html>
+    
+        </div><!--fin div fila -->
+    
+    </footer><!--fin contenedor footer -->
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    </body></html>
